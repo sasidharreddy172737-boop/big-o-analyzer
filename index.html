@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BIG (O)🍀</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav id="navibar">
+        <span id="navlogo">BIG (O) 🍀</span>
+    </nav>
+
+    <div id="main-body">
+
+        <h1>BIG (O) 🍀</h1>
+        <p id="sub-heading">
+            CALCULATE THE TIME AND SPACE COMPLEXITY OF YOUR CODE WITH BIG (O)<br><br>(THIS ONLY HANDLES SOME CASES AND
+            NOT ALL CASES)
+        </p>
+
+        <div id="skill">
+            <label>LANGUAGE:</label>
+            <select id="lang">
+                <option value="python">Python</option>
+
+            </select>
+        </div>
+        <br>
+
+        <div id="codehead">
+            <span id="editor-label">Code</span>
+            <span id="char-count">0 / 1500</span>
+        </div>
+
+        <textarea name="code" id="box" maxlength="1500"
+            placeholder="Paste your code here&#10;log10(HELLO WORLD!)"></textarea>
+
+        <div id="btn-section">
+            <br>
+            <button id="button1">CALCULATE</button>
+            <button id="button2">CLEAR</button>
+        </div>
+
+        <div id="timeresult">
+            <p>TIME COMPLEXITY:
+                <span id="time">-</span>
+            </p>
+            <p>SPACE COMPLEXITY:
+                <span id="space">-</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="javas/parser.js"></script>
+    <script src="javas/analyzer.js"></script>
+    <script src="javas/main.js"></script>
+
+
+</body>
+
+</html>
